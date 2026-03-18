@@ -21,3 +21,8 @@ nav:
   - Contributing:
     - Onboarding: meta/onboarding.md
     - Writing Effective Documentation: meta/writing-docs.md
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
