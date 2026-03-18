@@ -1,29 +1,12 @@
-site_name: "Project Docs"
+site_name: "CodeHive - Project Docs"
 site_url: https://CodeHive-QA.github.com/project-docs
-site_description: "Documentation for our team project"
+site_description: "Documentation for our team projects"
 theme:
   name: readthedocs
-  palette: 
-    - media: "(prefers-color-scheme: light)"
-      scheme: default
-      primary: indigo
-      toggle:
-        icon: material/brightness-7
-        name: Switch to dark mode
-    - media: "(prefers-color-scheme: dark)"
-      scheme: slate
-      primary: indigo
-      toggle:
-        icon: material/brightness-4
-        name: Switch to light mode
-  features:
-    - navigation.tabs
-    - search.suggest
-    - content.code.copy
 
-# This adds the "Edit" button you wanted!
 repo_url: https://github.com/CodeHive-QA/project-docs/
 edit_uri: edit/main/docs/
 
 nav:
   - Home: index.md
+  - Minecraft: minecraft.md
