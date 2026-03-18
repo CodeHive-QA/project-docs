@@ -1,5 +1,7 @@
 # Welcome to MkDocs
 
+THis is the default
+
 For full documentation visit [mkdocs.org](https://www.mkdocs.org).
 
 ## Commands
