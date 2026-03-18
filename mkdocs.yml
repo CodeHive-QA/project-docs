@@ -22,7 +22,7 @@ theme:
     - content.code.copy
 
 # This adds the "Edit" button you wanted!
-repo_url: https://github.com/YOUR_ORG_NAME/project-docs
+repo_url: https://github.com/CodeHive-QA/project-docs/
 edit_uri: edit/main/docs/
 
 nav:
