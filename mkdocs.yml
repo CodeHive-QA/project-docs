@@ -1,12 +1,23 @@
 site_name: "CodeHive - Project Docs"
 site_url: https://CodeHive-QA.github.com/project-docs
 site_description: "Documentation for our team projects"
+
+repo_url: https://github.com/CodeHive-QA/project-docs
+site_author: "CodeHive Team"
+copyright: "2026 CodeHive Team"
+
 theme:
-  name: readthedocs
+  name: material
 
 repo_url: https://github.com/CodeHive-QA/project-docs/
 edit_uri: edit/main/docs/
 
 nav:
   - Home: index.md
-  - Minecraft: minecraft.md
+  - Projects:
+    - Minecraft CPU:
+      - Overview: projects/minecraft-cpu/index.md
+      - Architecture: projects/minecraft-cpu/setup.md
+  - Contributing:
+    - Onboarding: meta/onboarding.md
+    - Writing Effective Documentation: meta/writing-docs.md

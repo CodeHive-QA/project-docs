@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://CodeHive-QA.github.com/project-docs/meta/onboarding/" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>📥 Onboarding &amp; Contribution - CodeHive - Project Docs</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "\ud83d\udce5 Onboarding \u0026amp; Contribution";
+        var mkdocs_page_input_path = "meta/onboarding.md";
+        var mkdocs_page_url = "/project-docs/meta/onboarding/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> CodeHive - Project Docs
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="" href="../../minecraft.md">Minecraft</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">CodeHive - Project Docs</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">📥 Onboarding &amp; Contribution</li>
+    <li class="wy-breadcrumbs-aside">
+          <a href="https://github.com/CodeHive-QA/project-docs/edit/main/docs/meta/onboarding.md" class="icon icon-github"> Edit on GitHub</a>
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="onboarding-contribution">📥 Onboarding &amp; Contribution</h1>
+<p>Welcome to <strong>CodeHive</strong>. To maintain a high standard of technical documentation, we use a tiered contribution system based on your role and experience level.</p>
+<h2 id="environment-setup">🛠️ Environment Setup</h2>
+<p>All members contributing to the documentation must use <a href="https://docs.astral.sh/uv/"><code>uv</code></a> for fast, reliable Python dependency management.</p>
+<ol>
+<li><strong>Install uv:</strong> Follow the <a href="https://docs.astral.sh/uv/getting-started/installation/">official installation guide</a>.</li>
+<li><strong>Clone the Repo:</strong> <code>bash
+    git clone [https://github.com/codehive/project-docs.git](https://github.com/codehive/project-docs.git)</code></li>
+<li><strong>Sync Environment:</strong> Navigate to the project folder and run:
+    <code>bash
+    uv sync</code>
+    <em>This will automatically create a <code>.venv</code> and install MkDocs with all required plugins based on the <code>uv.lock</code> file.</em></li>
+</ol>
+<hr />
+<h2 id="how-to-contribute">🛰️ How to Contribute</h2>
+<h3 id="level-1-novice-general-members"><strong>Level 1: Novice (General Members)</strong></h3>
+<p>If you are new to Git or documentation, you can still contribute content:
+* <strong>The Workflow:</strong> Draft your project updates, technical specs, or logs in Markdown format.
+* <strong>Submission:</strong> Send your <code>.md</code> files or raw text to the <strong>Documentation Moderators</strong> via the designated Discord channel. They will review, format, and upload the content for you.</p>
+<h3 id="level-2-advanced-moderators"><strong>Level 2: Advanced (Moderators)</strong></h3>
+<p>For members comfortable with version control, use the <strong>Pull Method</strong>:
+1.  <strong>Sync:</strong> Ensure your local environment is up to date with <code>uv sync</code>.
+2.  <strong>Preview:</strong> Run <code>uv run mkdocs serve</code> to see changes in real-time at <code>http://localhost:8000</code>.
+3.  <strong>Branch:</strong> Create a new feature branch for your edits.
+4.  <strong>PR:</strong> Submit a <strong>Pull Request</strong> on GitHub. A Lead Moderator will review and merge your changes.</p>
+<h3 id="level-3-privileged-leadsadmin"><strong>Level 3: Privileged (Leads/Admin)</strong></h3>
+<p>Members of the <strong>CodeHive GitHub Organization</strong> with write access can use the <strong>Push Method</strong>:
+* <strong>The Workflow:</strong> Direct push to the <code>main</code> branch is permitted for minor updates, configuration changes, or urgent documentation fixes.
+* <strong>Requirement:</strong> Ensure <code>uv run mkdocs serve</code> passes without errors before pushing.</p>
+<hr />
+              
+            </div>
+          </div><footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+        <span>
+          <a href="https://github.com/CodeHive-QA/project-docs/" class="fa fa-github" style="color: #fcfcfc"> GitHub</a>
+        </span>
+    
+    
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

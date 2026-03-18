@@ -1,9 +1,9 @@
 [project]
-name = "docs"
+name = "codehive-docs"
 version = "0.1.0"
-description = "Add your description here"
+description = "This is the documentation for CodeHive Projects."
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
-    "mkdocs>=1.6.1",
+    "mkdocs-material>=9.7.5",
 ]

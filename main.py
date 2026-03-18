@@ -1,5 +1,5 @@
 def main():
-    print("Hello from docs!")
+    print("Hello from CodeHive docs!")
 
 
 if __name__ == "__main__":
