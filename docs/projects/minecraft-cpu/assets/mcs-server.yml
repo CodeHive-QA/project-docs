@@ -1,0 +1,35 @@
+services:
+  web:
+    image: githubyumao/mcsmanager-web:v10.12.2
+    container_name: mcsmanager-web
+    ports:
+      - "23333:23333"
+    volumes:
+      - web_data:/opt/mcsmanager/web/data
+      - web_logs:/opt/mcsmanager/web/logs
+    networks:
+      - mc-network
+
+  daemon:
+    image: githubyumao/mcsmanager-daemon:latest
+    container_name: mcsmanager-daemon
+    restart: unless-stopped
+    ports:
+      - "24444:24444"
+    volumes:
+      - daemon_data:/opt/mcsmanager/daemon/data
+      - daemon_logs:/opt/mcsmanager/daemon/logs
+      - /var/run/docker.sock:/var/run/docker.sock
+    networks:
+      - mc-network
+
+# This section tells Docker to create these managed storage "buckets"
+volumes:
+  web_data:
+  web_logs:
+  daemon_data:
+  daemon_logs:
+
+networks:
+  mc-network:
+    external: true

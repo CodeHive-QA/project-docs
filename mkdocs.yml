@@ -8,21 +8,40 @@ copyright: "2026 CodeHive Team"
 
 theme:
   name: material
+  features:
+    - navigation.tabs
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.annotate
+    - content.code.copy
+    - content.code.select
 
 repo_url: https://github.com/CodeHive-QA/project-docs/
 edit_uri: edit/main/docs/
 
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - attr_list
+
+
 nav:
   - Home: index.md
   - Projects:
+    - Overview: projects/index.md
     - Minecraft CPU:
       - Overview: projects/minecraft-cpu/index.md
       - Architecture: projects/minecraft-cpu/setup.md
   - Contributing:
     - Onboarding: meta/onboarding.md
     - Writing Effective Documentation: meta/writing-docs.md
-
-markdown_extensions:
-  - admonition
-  - pymdownx.details
-  - pymdownx.superfences
