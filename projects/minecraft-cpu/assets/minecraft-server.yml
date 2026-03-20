@@ -1,0 +1,47 @@
+services:
+  mc:
+    image: itzg/minecraft-server:latest
+    container_name: mc-instance
+    tty: true
+    stdin_open: true
+    ports:
+      - "25565:25565"
+      - "25575:25575" # Expose RCON for the Daemon
+    environment:
+      EULA: "TRUE"
+      TYPE: "FABRIC"
+      VERSION: "1.21.1"
+      MEMORY: "6144M"
+      MOTD: "CodeHive Minecraft Server"
+      ICON: "https://codehive.bdschoolqatar.org/wp-content/uploads/2025/10/Untitled-design2.webp"
+      OVERRIDE_ICON: "true"
+      ONLINE_MODE: "false"
+      USE_AIKAR_FLAGS: "true"
+      TZ: "Asia/Qatar"
+      DIFFICULTY: "0"
+      PVP: "false"
+      MODE: "1"
+      ENABLE_COMMAND_BLOCK: "true"
+      ALLOW_NETHER: "false"
+      LEVEL_TYPE: "flat"
+      OPS: "rafio"
+      MODRINTH_PROJECTS: |
+        fabric-api
+        carpet
+        lithium
+        worldedit
+      RESOURCE_PACK: 'https://cdn.modrinth.com/data/RvfAlf4Z/versions/acYT0fGm/Redstone%20Tweaks%202.4.5.zip'
+      ENABLE_RCON: "true"
+      RCON_PASSWORD: "your_secure_password"
+      RCON_PORT: 25575
+    volumes:
+      - "minecraft-data:/data"
+    networks:
+      - mc-network
+
+volumes:
+  minecraft-data:
+
+networks:
+  mc-network:
+    external: true
