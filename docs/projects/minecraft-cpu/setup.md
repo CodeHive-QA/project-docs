@@ -91,5 +91,3 @@ This is the master list for the **CodeHive CPU Project**. It is categorized by p
 * **Server-Side:** These are installed in the Docker container (`./assets/minecraft-server.yml`). They ensure the world stays lag-free and supports our logic tools.
 * **Client-Side:** These go in your local `mods` folder. If you are using **SKLauncher**, you can manually add these via the *Installation Manager* or use our pre-built zip.
 * **Both:** These mods must be present on both the server and your computer for the features (like WorldEdit commands or Multimeter data) to sync properly.
-
-**Would you like me to update the "Quick Start" section to include specific instructions for the Phase 2 mods?**
